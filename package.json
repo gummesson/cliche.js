@@ -1,0 +1,30 @@
+{
+  "name": "cliche.js",
+  "version": "0.1.0",
+  "description": "Effortlessly map click events.",
+  "main": "dist/cliche.min.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/cliche.js.git"
+  },
+  "keywords": [
+    "dom",
+    "event"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/cliche.js/issues"
+  },
+  "homepage": "https://github.com/gummesson/cliche.js",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-open": "~0.2.2"
+  }
+}
