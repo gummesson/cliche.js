@@ -9,8 +9,9 @@ module.exports = function(grunt) {
         'lib/*.js',
         'test/*.js'
       ],
+
       options: {
-      newcap: false
+        newcap: false
       }
     },
 
