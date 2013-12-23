@@ -77,4 +77,20 @@
     strictEqual(two.innerText, 'Dos');
   });
 
+
+  test('A single click event with multiple targets', function() {
+    var infinite = document.querySelectorAll('.infinite');
+    var click = new Event('click');
+
+    Cliche({
+      '.infinite' : function(event) {
+        event.target.style.color = 'green';
+      }
+    });
+
+    infinite[0].dispatchEvent(click);
+    strictEqual(infinite[0].style.color, 'green');
+    strictEqual(infinite[1].style.color, '');
+  });
+
 })();
