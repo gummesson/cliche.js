@@ -16,7 +16,7 @@ var anotherFunction = function(event) {
 
 Cliche({
   '#some-selector'    : someFunction,
-  '#another-selector' : anotherFunction
+  '.another-selector' : anotherFunction
 });
 ~~~
 
