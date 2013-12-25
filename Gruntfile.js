@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
     open: {
       test: {
-        path: 'test/test.html'
+        path: 'test.html'
       }
     },
 
