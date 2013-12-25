@@ -20,6 +20,18 @@ Cliche({
 });
 ~~~
 
+### Example
+
+~~~ javascript
+var toggleNav = function(selector) {
+  selector.classList.toggle('.is-visible');
+};
+
+Cliche({
+  '.nav-toggle' : toggleNav
+};
+~~~
+
 ## License
 
 The MIT License (MIT)
