@@ -28,7 +28,7 @@ var toggleNav = function(selector) {
 };
 
 Cliche({
-  '.nav-toggle' : toggleNav
+  '#nav-toggle' : toggleNav
 };
 ~~~
 
