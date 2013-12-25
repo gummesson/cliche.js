@@ -4,8 +4,8 @@ describe('Cliche', function() {
     var click = new Event('click');
 
     Cliche({
-      '#one' : function() {
-        one.style.color = 'red';
+      '#one' : function(selector, event) {
+        selector.style.color = 'red';
       }
     });
 
@@ -18,9 +18,9 @@ describe('Cliche', function() {
     var click = new Event('click');
 
     Cliche({
-      '#one' : function(event) {
+      '#one' : function(selector, event) {
         if (event.target.innerText == 'One') {
-          one.innerText = '1';
+          selector.innerText = '1';
         }
       }
     });
@@ -35,11 +35,11 @@ describe('Cliche', function() {
     var click = new Event('click');
 
     Cliche({
-      '#one' : function() {
-        one.style.color = 'blue';
+      '#one' : function(selector, event) {
+        selector.style.color = 'blue';
       },
-      '#two' : function() {
-        two.className = 'three';
+      '#two' : function(selector, event) {
+        selector.className = 'three';
       }
     });
 
@@ -55,14 +55,14 @@ describe('Cliche', function() {
     var click = new Event('click');
 
     Cliche({
-      '#one' : function(event) {
+      '#one' : function(selector, event) {
         if (event.target.id == 'one') {
-          one.innerText = 'Uno';
+          selector.innerText = 'Uno';
         }
       },
-      '#two' : function(event) {
+      '#two' : function(selector, event) {
         if (event.target.id == 'two') {
-          two.innerText = 'Dos';
+          selector.innerText = 'Dos';
         }
       }
     });
@@ -78,8 +78,8 @@ describe('Cliche', function() {
     var click = new Event('click');
 
     Cliche({
-      '.infinite' : function(event) {
-        infinite[0].innerText = 'Ett';
+      '.infinite' : function(selector, event) {
+        selector.innerText = 'Ett';
       }
     });
 
@@ -92,7 +92,7 @@ describe('Cliche', function() {
     var click = new Event('click');
 
     Cliche({
-      '.infinite' : function(event) {
+      '.infinite' : function(selector, event) {
         event.target.style.color = 'green';
       }
     });

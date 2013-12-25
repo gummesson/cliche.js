@@ -5,11 +5,11 @@ Effortlessly map click events. For IE9+.
 ## Usage
 
 ~~~ javascript
-var someFunction = function() {
+var someFunction = function(selector) {
   // ...  
 };
 
-var anotherFunction = function(event) {
+var anotherFunction = function(selector, event) {
   var target = event.target;
   // ...  
 };
