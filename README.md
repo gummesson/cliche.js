@@ -6,12 +6,12 @@ Effortlessly map click events. For IE9+.
 
 ~~~ javascript
 var someFunction = function(selector) {
-  // ...  
+  // ...
 };
 
 var anotherFunction = function(selector, event) {
   var target = event.target;
-  // ...  
+  // ...
 };
 
 Cliche({
@@ -29,7 +29,7 @@ var toggleNav = function(selector) {
 
 Cliche({
   '#nav-toggle' : toggleNav
-};
+});
 ~~~
 
 ## License
